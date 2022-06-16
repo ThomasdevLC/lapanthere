@@ -27,6 +27,27 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+.title-presentation {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+.title-testimony {
+    text-align: center;
+    font-weight: 600;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.title-portfolio {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
 .bloc {
     width: 100%;
     clear: both;
