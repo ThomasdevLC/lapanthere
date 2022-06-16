@@ -842,6 +842,65 @@ h4 {
     border-color: #364577 !important;
 }
 
+/* /////////////// contact ///////////// */
+
+.contact {
+    padding: 10rem 1rem 10rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input {
+    /* background: #333; */
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+    outline: 0;
+    margin-bottom: 1rem;
+
+}
+
+.contact-form button {
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 30px;
+    background: #D34400;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.brief {
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.contact-form button:hover {
+    transform: scale(1.03);
+    color: white;
+}
+
+.brief-details {
+    font-size: 1rem;
+}
+
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }
