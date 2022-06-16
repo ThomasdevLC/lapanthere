@@ -849,6 +849,11 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+input {
+    font-family: helvetica;
 }
 
 .contact-form {
@@ -867,7 +872,6 @@ h4 {
     color: black;
     outline: 0;
     margin-bottom: 1rem;
-
 }
 
 .contact-form button {
@@ -881,6 +885,7 @@ h4 {
     font-weight: 700;
     font-size: 1.2rem;
     cursor: pointer;
+    font-family: helvetica HelveticaNeue-Light;
 }
 
 
