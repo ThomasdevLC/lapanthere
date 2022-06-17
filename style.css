@@ -7,20 +7,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.header {
-    position: sticky;
-    top: -14px;
-    z-index: 9;
-}
-
-.anchor :hover {
-    border-bottom: 3px solid #D34400;
-
-}
 
 a,
 button {
@@ -127,10 +113,7 @@ a:hover {
     right: 0;
 }
 
-/* .texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-} */
+
 
 .b-parallax {
     background-attachment: fixed;
@@ -314,6 +297,8 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row.row-no-gutters>[class^="col-"],
@@ -832,10 +817,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    /* background: #c27956 !important; */
-    /* color: #FFFFFF !important; */
     transform: scale(1.05);
-
 }
 
 .ltc-white {
@@ -859,8 +841,53 @@ h4 {
     border-color: #364577 !important;
 }
 
+/* /////////  HEADER ///////////// */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
+.anchor :hover {
+    border-bottom: 3px solid #D34400;
+}
+
+/* //////////////////////////////////// */
+
+.text-small {
+    font-size: 1.3rem;
+}
+
+.text-medium {
+    font-size: 1.5rem;
+}
+
+.text-sign {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
 
 
+.pad-foot {
+    padding: 35px;
+}
+
+.pad-icone {
+    padding-top: 10px;
+}
+
+.pad-twnt {
+    padding-bottom: 20px;
+}
+
+.pic-center {
+    margin: auto;
+}
 
 /* /////////////// contact ///////////// */
 
@@ -883,7 +910,6 @@ input {
 }
 
 .contact-form input {
-    /* background: #333; */
     border: 0;
     border-bottom: 1px solid #555;
     padding: 1rem;
@@ -891,12 +917,13 @@ input {
     color: black;
     outline: 0;
     margin-bottom: 1rem;
+
 }
 
 .contact-form button {
     display: block;
     margin: 3rem auto;
-    padding: 1rem 2rem;
+    padding: 12px 28px 12px 28px;
     border: 0;
     border-radius: 30px;
     background: #D34400;
@@ -904,7 +931,7 @@ input {
     font-weight: 700;
     font-size: 1.2rem;
     cursor: pointer;
-    font-family: helvetica HelveticaNeue-Light;
+    font-family: helvetica;
 }
 
 
