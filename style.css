@@ -7,6 +7,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: sticky;
+    top: -14px;
+    z-index: 9;
+}
+
+.anchor :hover {
+    border-bottom: 3px solid #D34400;
+
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -63,6 +78,7 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+
 }
 
 .bloc-lg {
@@ -313,6 +329,7 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+
 }
 
 .navbar-brand {
@@ -842,10 +859,12 @@ h4 {
     border-color: #364577 !important;
 }
 
+
+
+
 /* /////////////// contact ///////////// */
 
 .contact {
-    padding: 10rem 1rem 10rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -898,7 +917,7 @@ input {
 }
 
 .contact-form button:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
     color: white;
 }
 

@@ -50,38 +50,36 @@
 	<div class="page-container">
 
 		<!-- bloc-0 -->
-		<div class="bloc bgc-white l-bloc ">
-			<div class="container bloc-sm">
+		<div class="header">
+			<div class="header bloc bgc-white l-bloc ">
+				<div class="container bloc-sm">
 
-				<nav class="navbar row">
-					<div class="navbar-header">
+					<nav class="navbar row">
+						<div class="navbar-header">
 
-						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
-								alt="paris web design logo agence web meilleure agence" height="40" /></a>
-						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
-							data-toggle="collapse" data-target=".navbar-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
+							<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
+									alt="paris web design logo agence web meilleure agence" height="40" /></a>
+							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
+								data-toggle="collapse" data-target=".navbar-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
 
-					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-						<ul class="site-navigation nav navbar-nav">
-							<li>
-								<a href="index.html">Accueil</a>
-							</li>
-							<li>
-							</li>
-							<li>
-								<a href="page2.html">page2 &gt;</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
+						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+							<ul class="site-navigation nav navbar-nav">
+								<li class="anchor"><a href="index.html">Accueil</a></li>
+								<li class="anchor"><a href="#bloc-4-portfolio">Portfolio</a></li>
+								<li class="anchor"><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
+
 		<!-- bloc-0 END -->
 
 		<!-- bloc-1-presentation -->
@@ -271,41 +269,80 @@
 		</div>
 		<!-- bloc-5-cta END -->
 
-		<!-- Footer - bloc-8 -->
-		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-			<div class="container bloc-sm">
-				<div class="row">
-					<div class="col-sm-12">
-						<p class="text-center white">
-							Agence La Panthère - Agence web basée à Lyon.<br>
-						</p>
-						<div class="row row-no-gutters social">
-							<div class="col-sm-3">
-								<div class="text-center">
-									<a class="social" href="index.html" aria-label="suivez nous sur Twitter"><span
-											class="fa fa-twitter icon-md"></span></a>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="text-center">
-									<a class="social" href="index.html" aria-label="suivez nous sur Facebook"><span
-											class="fa fa-facebook icon-md"></span></a>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="text-center">
-									<a class="social" href="index.html" aria-label="suivez nous sur Dribble"><span
-											class="fa fa-dribbble icon-md"></span></a>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="text-center">
-									<a class="social" href="index.html" aria-label="suivez nous sur Instagram"><span
-											class="fa fa-instagram icon-md"></span></a>
-								</div>
-							</div>
 
-							<!-- <div class="row">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="text-center hero-bloc-text ">
+					Parlons web design !
+				</h1>
+				<p class="text-center mg-lg tight-width-whitespace">
+					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+				</p>
+			</div>
+		</div>
+
+		<section id="contact" class="contact">
+			<form action="#" class="contact-form">
+				<h2 class="title">Pour nous <strong>contacter</strong></h2>
+				<input type="text" placeholder="Nom" name="name" id="name">
+				<input type="email" placeholder="Email" name="email" id="email">
+				<input type="text" placeholder="Comment nous avez-vous connu ?" name="message" id="message">
+				<label class="brief" for="question">
+					Brief de votre projet
+					<i class="brief-details">(Ajoutez autant de détails que nécessaire)</i>
+				</label>
+				<textarea name="question" id="question" cols="30" rows="10"></textarea>
+
+				<div>
+					<button>ENVOYER</button>
+				</div>
+			</form>
+
+
+			<div class="col-sm-6">
+				<p>
+					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
+					lundi
+					au vendredi<br>
+				</p>
+			</div>
+
+			<!-- Footer - bloc-8 -->
+			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+				<div class="container bloc-sm">
+					<div class="row">
+						<div class="col-sm-12">
+							<p class="text-center white">
+								Agence La Panthère - Agence web basée à Lyon.<br>
+							</p>
+							<div class="row row-no-gutters social">
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html" aria-label="suivez nous sur Twitter"><span
+												class="fa fa-twitter icon-md"></span></a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html" aria-label="suivez nous sur Facebook"><span
+												class="fa fa-facebook icon-md"></span></a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html" aria-label="suivez nous sur Dribble"><span
+												class="fa fa-dribbble icon-md"></span></a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html" aria-label="suivez nous sur Instagram"><span
+												class="fa fa-instagram icon-md"></span></a>
+									</div>
+								</div>
+
+								<!-- <div class="row">
 							<div class="col-sm-4">
 								Partenaires
 								<ul>
@@ -343,12 +380,12 @@
 									<li><a href="vraiseofiable.com">vraiseofiable.com</a></li>
 								</ul>
 							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Footer - bloc-8 END -->
+			<!-- Footer - bloc-8 END -->
 
 	</div>
 	<!-- Principal conteneur END -->
