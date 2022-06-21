@@ -25,7 +25,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    /* background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center; */
 }
 
 .title-presentation {
@@ -634,7 +634,9 @@ a[data-lightbox]:hover img {
 
 .close-lightbox:hover,
 .next-lightbox:hover,
-.prev-lightbox:hover {
+.prev-lightbox:hover .close-lightbox:focus,
+.next-lightbox:focus,
+.prev-lightbox:focus {
     opacity: 1.0;
     color: #FFF;
 }
@@ -841,98 +843,7 @@ h4 {
     border-color: #364577 !important;
 }
 
-/* /////////  HEADER ///////////// */
 
-html {
-    scroll-behavior: smooth;
-}
-
-.header {
-    position: sticky;
-    top: 0px;
-    z-index: 9;
-}
-
-.anchor :hover {
-    border-bottom: 3px solid #D34400;
-}
-
-/* //////////////////////////////////// */
-
-.text-small {
-    font-size: 1.3rem;
-}
-
-.text-medium {
-    font-size: 1.5rem;
-}
-
-.text-sign {
-    font-size: 1.9rem;
-    font-weight: 500;
-}
-
-
-.pad-foot {
-    padding: 35px;
-}
-
-.pad-icone {
-    padding-top: 10px;
-}
-
-.pad-twnt {
-    padding-bottom: 20px;
-}
-
-.pic-center {
-    margin: auto;
-}
-
-/* /////////////// contact ///////////// */
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-input {
-    font-family: helvetica;
-}
-
-.contact-form {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.contact-form input {
-    border: 0;
-    border-bottom: 1px solid #555;
-    padding: 1rem;
-    font-size: 1.3rem;
-    color: black;
-    outline: 0;
-    margin-bottom: 1rem;
-
-}
-
-.contact-form button {
-    display: block;
-    margin: 3rem auto;
-    padding: 12px 28px 12px 28px;
-    border: 0;
-    border-radius: 30px;
-    background: #D34400;
-    color: white;
-    font-weight: 700;
-    font-size: 1.2rem;
-    cursor: pointer;
-    font-family: helvetica;
-}
 
 
 .brief {
@@ -943,10 +854,7 @@ input {
     color: black;
 }
 
-.contact-form button:hover {
-    transform: scale(1.05);
-    color: white;
-}
+
 
 .brief-details {
     font-size: 1rem;
@@ -1218,4 +1126,143 @@ input {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+
+/* ///////////////////////////////////// */
+/* //////////////  HEADER //////////////////*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
+.anchor :hover,
+.anchor :focus {
+    border-bottom: 3px solid #D34400;
+}
+
+/* /////////////// BODY //////////////// */
+
+.text-small {
+    font-size: 1.3rem;
+}
+
+.text-medium {
+    font-size: 1.5rem;
+}
+
+.text-sign {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+
+.pad-foot {
+    padding: 35px;
+}
+
+.pad-icone {
+    padding-top: 10px;
+}
+
+.pad-twnt {
+    padding-bottom: 20px;
+}
+
+.pic-center {
+    margin: auto;
+}
+
+
+/*  ////////////// CAROUS   SEL /////////// */
+
+.focus-img:focus {
+    border: 3px solid #D34400;
+}
+
+/* /////////////// CONTACT ///////////// */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    font-family: helvetica;
+}
+
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+    outline: 0;
+    margin-bottom: 1rem;
+
+}
+
+.contact-form button {
+    display: block;
+    margin: 3rem auto;
+    padding: 12px 28px 12px 28px;
+    border: 0;
+    border-radius: 30px;
+    background: #D34400;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: helvetica;
+}
+
+
+.contact-form button:hover,
+.contact-form button:focus {
+    transform: scale(1.15);
+    color: white;
+}
+
+
+/* //////////////////////// FOOTER /////////////////////// */
+
+.d-bloc a:hover .icon-sm,
+.d-bloc a:hover .icon-md,
+.d-bloc a:hover .icon-lg,
+.d-bloc a:hover .icon-xl,
+.return a:hover .d-bloc a:focus .icon-sm,
+.d-bloc a:focus .icon-md,
+.d-bloc a:focus .icon-lg,
+.d-bloc a:focus .icon-xl .return a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.return {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-family: helvetica;
+}
+
+.footer-return . {
+    color: #FFFFFF;
 }
