@@ -1251,6 +1251,10 @@ input {
     margin: auto;
 }
 
+.pad-cnt {
+    padding-top: 20px;
+}
+
 /* //////////////////////// FOOTER /////////////////////// */
 
 .d-bloc a:hover .icon-sm,
@@ -1282,6 +1286,8 @@ input {
 
 .fa-circle-chevron-up {
     padding-right: 8px;
-    line-height: -20px;
-
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
 }
