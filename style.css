@@ -1180,13 +1180,22 @@ html {
 }
 
 
-/*  ////////////// CAROUS   SEL /////////// */
+/*  ////////////// CAROUSSEL /////////// */
 
 .focus-img:focus {
     border: 3px solid #D34400;
 }
 
 /* /////////////// CONTACT ///////////// */
+
+
+.contact-title {
+    font-size: 36px;
+}
+
+.col-sm-12 {
+    color: #000000;
+}
 
 .contact {
     display: flex;
@@ -1238,6 +1247,9 @@ input {
     color: white;
 }
 
+.location {
+    margin: auto;
+}
 
 /* //////////////////////// FOOTER /////////////////////// */
 
@@ -1265,4 +1277,11 @@ input {
 
 .footer-return . {
     color: #FFFFFF;
+
+}
+
+.fa-circle-chevron-up {
+    padding-right: 8px;
+    line-height: -20px;
+
 }
